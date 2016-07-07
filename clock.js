@@ -1,5 +1,5 @@
   function Clock() {
-    this.new = function (selector, tf) {
+    this.new = function (selector, tf, type) {
       if (tf === true) {
         setInterval(function () {
           var d = new Date();
@@ -23,7 +23,12 @@
           var t = day.h + ":" + day.m + ":" + day.s + ":" + day.ms;
           var hexTime = '#' + day.h + '' + day.m + '' + day.s;
 
-          $(selector).html(t);
+          if (type === false || type === undefined) {
+            $(selector).html(t);
+          } else if (type === true) {
+            $(selector).html(hexTime);
+          }
+
         }, 1);
       } else {
         setInterval(function () {
@@ -46,7 +51,11 @@
           var t = day.h + ":" + day.m + ":" + day.s;
           var hexTime = '#' + day.h + '' + day.m + '' + day.s;
 
-          $(selector).html(t);
+          if (type === false || type === undefined) {
+            $(selector).html(t);
+          } else if (type === true) {
+            $(selector).html(hexTime);
+          }
         }, 1);
       }
     };
