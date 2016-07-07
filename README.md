@@ -12,7 +12,7 @@ var clock = new Clock(); //define clock
 //set clock element
 clock.new('#myClock') //'.class' or '#id' or 'tagname'
 ```
-###Color
+###Hex Clock
 Clock.js generate an hex code based on actual hour for example `13:36:12` is `#133612` you can simpy do this with `clock.setBackground();` and `clock.setColor();` also like `clock.new();` you can change the selector to classes, id or other tagnames.
 
 ##Dependencies
