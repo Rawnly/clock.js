@@ -13,7 +13,9 @@ var clock = new Clock(); //define clock
 clock.new('#myClock');
 ```
 
-If you want you can display ms with `clock.new('#myClock', true)` or use our hex format `clock.new('#myClock', false, true)` defaults values of this proprieties is `false`.
+If you want you can display ms with `clock.new('#myClock', true)` or use our hex format 
+
+`clock.new('#myClock', false, true)` defaults values of this proprieties is `false`.
 
 
 ###Hex Clock
