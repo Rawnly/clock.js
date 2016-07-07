@@ -1,5 +1,5 @@
 function Clock() {
-    this.createClock = function (selector) {
+    this.new = function (selector) {
       setInterval(function () {
         var d = new Date();
         var day = {
