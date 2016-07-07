@@ -29,4 +29,4 @@ Clock.js need [jQuery](https://github.com/jquery/jquery) to works, snippet below
 ```
 
 #Demo
-A demo is available [here](webe.io/clocktest)
+A demo is available [here](https://webe.io/clocktest)
