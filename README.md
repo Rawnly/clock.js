@@ -1,5 +1,5 @@
 #Usage
-Include this file 
+Download our [latest release](https://github.com/Rawnly/clock.js/releases) and nclude `clock.js` file 
 ```html
 <script src=".../path/to/clock.js"> </script>
 ```
