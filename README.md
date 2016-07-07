@@ -12,16 +12,8 @@ var clock = new Clock(); //define clock
 //set clock element
 clock.new('#myClock') //'.class' or '#id' or 'tagname'
 ```
-
-also to change background color based on clock hex code (es. 12:00:30 am is #120030) use this 
-
-```javascript
-//var clock = new Clock();
-
-clock.setBackground('body') //also like new();you can change the selector to classes, id or other tagnames
-```
-
-so easy, the same fo text color with `clock.setColor();`.
+###Color
+Clock.js generate an hex code based on actual hour for example `13:36:12` is `#133612` you can simpy do this with `clock.setBackground();` and `clock.setColor();` also like `clock.new();` you can change the selector to classes, id or other tagnames.
 
 ##Dependencies
 Clock.js need [jQuery](https://github.com/jquery/jquery) to works, snippet below:
