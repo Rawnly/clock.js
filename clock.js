@@ -1,6 +1,6 @@
   function Clock() {
     this.new = function (selector, tf) {
-      if (tf == 'true') {
+      if (tf === true) {
         setInterval(function () {
           var d = new Date();
           var day = {
