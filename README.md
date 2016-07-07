@@ -27,3 +27,6 @@ Clock.js need [jQuery](https://github.com/jquery/jquery) to works, snippet below
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 ```
+
+#Demo
+A demo is available [here](webe.io/clocktest)
