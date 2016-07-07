@@ -10,8 +10,12 @@ then to create a new clock use this:
 var clock = new Clock(); //define clock
 
 //set clock element
-clock.new('#myClock', true) //'.class' or '#id' or 'tagname' | If true it will display ms, leave empty for false
+clock.new('#myClock');
 ```
+
+If you want you can display ms with `clock.new('#myClock', true)` or use our hex format `clock.new('#myClock', false, true)` defaults values of this proprieties is `false`.
+
+
 ###Hex Clock
 Clock.js generate an hex code based on actual hour for example `13:36:12` is `#133612` you can simpy do this with `clock.setBackground();` and `clock.setColor();` also like `clock.new();` you can change the selector to classes, id or other tagnames.
 
