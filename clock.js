@@ -19,31 +19,30 @@ function Clock() {
     }
 
     t = day.h + ":" + day.m + ":" + day.s + ":" + day.ms;
+    tNoMs = day.h + ":" + day.m + ":" + day.s;
     hexTime = '#' + day.h + '' + day.m + '' + day.s;
   }
 
   this.new = function (selector, tf, type) {
     temp();
-    if (tf === true) {
-      setInterval(function () {
-        if (type === false || type === undefined) {
-          $(selector).html(t);
-        } else if (type === true && ts === false) {
-          $(selector).html(hexTime);
-        } else {
-          console.error('Maybe you set true ms, disable it to display hexcode');
-        }
-      }, 1);
-    } else {
-      setInterval(function () {
-        temp();
-        if (type === false || type === undefined) {
-          $(selector).html(t);
-        } else if (type === true) {
-          $(selector).html(hexTime);
-        }
-      }, 1);
+    function getStatus(variable) {
+      if (variable === true) {
+        return variable;
+      } else {
+        return variable;
+      }
     }
+    setInterval(function () {
+      if (tf === true) {
+        $(selector).html(t);
+      } else {
+        $(selector).html(tNoMs);
+      }
+
+      if (type === true) {
+        $(selector).html(hexTime);
+      }
+    }, 1);
   };
   this.setBackground = function (element) {
     setInterval(function () {
@@ -52,6 +51,7 @@ function Clock() {
     }, 1);
   };
   this.setColor = function (element) {
+    temp();
     setInterval(function () {
       $(element).css('color', hexTime);
     }, 1);
