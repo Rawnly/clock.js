@@ -1,5 +1,9 @@
 #Usage
-to create a clock use this: 
+Include this file 
+```html
+<script src=".../path/to/clock.js"> </script>
+```
+then to create a new clock use this: 
 ```JavaScript
 //yourJsFile.js
 
