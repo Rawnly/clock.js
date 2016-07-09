@@ -1,12 +1,11 @@
 $(document).ready(function() {
-  var firstClock = new Clock();
-  firstClock.setBackground('body');
-  firstClock.new('#ms', true, false);
-//nomsClock
-  var secondClock = new Clock();
-  secondClock.new('#noMs', false, false);
- //hexClock
-  var hex = new Clock();
-  hex.new('#hexClock', false, true);
-  $('#col').val('#fff');
+  $('#ms').newClock();
+  $('#noMs').newClock({
+    ms:false
+    //default is classic
+  });
+  $('#hexClock').newClock({
+    type: 'hex' //hex does not support ms!
+    //default ms are false!
+  })
 });
