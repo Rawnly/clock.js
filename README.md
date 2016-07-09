@@ -25,4 +25,4 @@ Clock.js need [jQuery](https://github.com/jquery/jquery) to works, snippet below
 #Other
 - A preview is available [**here**](https://webe.io/clocktest)
 - Coded with [**Atom**](http://atom.io), an amazing code editor
-- Made with love by [**Rawnly**](http://github.com/Rawnly) unde [**MIT License**](https://github.com/Rawnly/clock.js/blob/master/LICENSE)
+- Made with love by [**Rawnly**](http://github.com/Rawnly) under [**MIT License**](https://github.com/Rawnly/clock.js/blob/master/LICENSE)
