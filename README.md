@@ -6,9 +6,6 @@ Download our [latest release](https://github.com/Rawnly/clock.js/releases) and n
 then to create a new clock use this: 
 ```JavaScript
 //yourJsFile.js
-
-var clock = new Clock(); //define clock
-
 //set clock element
 clock.new('#myClock');
 ```
