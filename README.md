@@ -5,9 +5,9 @@ Download our [latest release](https://github.com/Rawnly/clock.js/releases) and n
 ```
 then to create a new clock use this: 
 ```JavaScript
-//yourJsFile.js
 //set clock element
-clock.new('#myClock');
+$('#myDiv').newClock({
+});
 ```
 
 If you want you can display ms with `clock.new('#myClock', true)` or use our hex format 
